@@ -1,0 +1,24 @@
+@font-face {
+	font-family: 'DrukTextWideCyr-Medium';
+	src: url('../../fonts/Druk/druktextwidecyr-medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('../../fonts/Druk/druktextwidecyr-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../../fonts/Druk/druktextwidecyr-medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../../fonts/Druk/druktextwidecyr-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../../fonts/Druk/druktextwidecyr-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../../fonts/Druk/druktextwidecyr-medium.svg#druktextwidecyr-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'NunitoSans';
+	src: url('../../fonts/NunitoSans/NunitoSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+	font-family: 'NunitoSans';
+	src: url('../../fonts/NunitoSans/NunitoSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face {
+	font-family: 'NunitoSans';
+	src: url('../../fonts/NunitoSans/NunitoSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
