@@ -124,3 +124,53 @@
   background-color: rgb(255 255 255 / 90%);
   transform: scale(1);
 }
+.storis__indicators {
+  display: flex;
+  width: 320px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 150px;
+  position: absolute;
+  top: -70px;
+  left: -50px;
+}
+.storis__indicators::after{
+  content: '';
+  position: absolute;
+  top: 107px;
+  right: -32px;
+  background-color: #B3BACF;
+  width: 11px;
+  height: 2px;
+  transform: rotate(45deg);
+  border-radius: 9px;
+}
+.storis__indicators::before{
+  content: '';
+  position: absolute;
+  top: 107px;
+  right: -32px;
+  background-color: #B3BACF;
+  width: 11px;
+  height: 2px;
+  transform: rotate(-45deg);
+  border-radius: 9px;
+}
+.storis__indocator {
+  width: 55px;
+  height: 4px;
+  border-radius: 46.3%;
+  background-color: #B3BACF;
+  opacity: .25;
+  transform: scale(1);
+}
+.storis__indocator.itc-slider__indicator_active {
+  opacity: 1;
+  transform: scale(1);
+}
+.storis__indicators_2{
+  position: absolute;
+  top: 829px;
+  left: -139px;
+}
