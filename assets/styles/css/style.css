@@ -588,16 +588,95 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
   background-color: #fff;
 }
+.phone__button:first-child.phone__button--one::after {
+  content: none;
+}
 
 .phone__button__text {
   font-size: 16px;
   color: #fff;
 }
 
-.storis__indicators_2 {
+.phone__field {
+  width: 320px;
+  height: 70px;
+  background-color: #FAFBFC;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.phone__field__upperText {
+  font-size: 11px;
+  color: #919AB6;
+  margin-bottom: 6px;
+}
+
+.phone__field__mainText {
+  font-size: 16px;
+  color: #04242B;
+}
+
+.phone__field__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page4 {
+  min-height: 900px;
+  position: relative;
+}
+
+.page4__container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 1920px;
+  padding: 0;
+}
+
+.page4__main {
+  width: 50vw;
+  padding-left: 17%;
+}
+
+.page4__main2 {
+  overflow: hidden;
+  height: 900px;
+  width: 945px;
+}
+
+.page4__item {
+  background-color: #EDE6A7;
+  height: 900px;
+  max-width: 945px;
+  width: 100%;
+  overflow: hidden;
+  padding-left: 6vw;
+  position: relative;
+}
+
+.page4__img {
   position: absolute;
-  top: 829px;
-  left: -139px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.green {
+  background-color: #C1E197;
+}
+
+.purple {
+  background-color: #FFA9DD;
+}
+
+.pink {
+  background-color: #F46F8F;
 }
 
 @keyframes skeleton {

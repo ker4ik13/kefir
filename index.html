@@ -10,26 +10,29 @@
     <title>Айри</title>
 </head>
 <body>
-<nav class="nav">
-    <div class="nav__left">
-        <a href="index.html"><img src="assets/img/nav/logo/logo.svg" alt="Айри" class="logo__img"></a>
-    </div>
-    <div class="nav__right">
-        <a href="#" class="nav__login">
-            <img src="assets/img/nav/lock.svg" alt="" class="login__img">
-            <p class="nav__text">Вход</p>
-        </a>
-        <div class="nav__register">
-            <a href="#" class="nav__text">Регистрация</a>
+<header class="header">
+    <nav class="nav">
+        <div class="nav__left">
+            <a href="index.html"><img src="assets/img/nav/logo/logo.svg" alt="Айри" class="logo__img"></a>
         </div>
-        <div class="nav__menu">
-            <span></span>
-            <p class="nav__text">Меню</p>
+        <div class="nav__right">
+            <a href="#" class="nav__login">
+                <img src="assets/img/nav/lock.svg" alt="" class="login__img">
+                <p class="nav__text">Вход</p>
+            </a>
+            <div class="nav__register">
+                <a href="#" class="nav__text">Регистрация</a>
+            </div>
+            <div class="nav__menu">
+                <span></span>
+                <p class="nav__text">Меню</p>
+            </div>
         </div>
-    </div>
-</nav><!-- nav -->
+    </nav>
+</header>
 
-<div class="page1">
+
+<main class="page1">
     <div class="container">
         <main class="main">
             <h1 class="title">Революционный способ <span>знакомств</span></h1>
@@ -117,9 +120,9 @@
         <img src="assets/img/page1-img1.png" alt="" class="page1__img1">
         <img src="assets/img/page1-img2.png" alt="" class="page1__img2">
     </div><!-- container -->
-</div><!-- page1 -->
+</main><!-- page1 -->
 
-<div class="page2">
+<main class="page2">
     <div class="container">
         <main class="main">
             <h2 class="title white__text title__page2">Найти «своего» <span>человека<span></h2>
@@ -133,9 +136,9 @@
         </div>
         <img src="assets/img/arrow-down-white.svg" alt="" class="arrow__down page2__arrow">
     </div>
-</div>
+</main><!-- page2 -->
 
-<div class="page3">
+<main class="page3">
     <div class="container">
         <div class="main">
             <h2 class="title">Как все это <span>работает</span></h2>
@@ -145,7 +148,7 @@
         <img src="assets/img/phone-img.svg" alt="" class="page3__phone__img">
         <div class="phone__inner page3__phone__inner">
             <div class="main">
-                <div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+                <div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false" data-swipe="false">
                     <div class="itc-slider__wrapper">
                         <div class="itc-slider__items">
                             <div class="itc-slider__item">
@@ -178,53 +181,56 @@
                             </div>
                             <div class="itc-slider__item">
                                 <div class="phone__item">
-                                    <p class="phone__title">Кого хотите найти?</p>
+                                    <p class="phone__title">Как вас зовут?</p>
+                                    <div class="phone__field">
+                                        <p class="phone__field__upperText">Ваше имя</p>
+                                        <p class="phone__field__mainText">Денис</p>
+                                    </div>
                                     <div class="phone__buttons">
-                                        <div class="phone__button">
-                                            <p class="phone__button__text">Друзей</p>
-                                        </div>
-                                        <div class="phone__button">
-                                            <p class="phone__button__text">Отношения</p>
+                                        <div class="phone__button phone__button--one">
+                                            <p class="phone__button__text">Далее</p>
                                         </div>
                                     </div>
                                 </div><!-- phone__item -->
                             </div>
                             <div class="itc-slider__item">
                                 <div class="phone__item">
-                                    <p class="phone__title">Кого хотите найти?</p>
-                                    <div class="phone__buttons">
-                                        <div class="phone__button">
-                                            <p class="phone__button__text">Друзей</p>
+                                    <p class="phone__title">Когда у вас день рождение?</p>
+                                    <div class="phone__field">
+                                        <p class="phone__field__upperText">Выберите дату</p>
+                                        <div class="phone__field__inner">
+                                            <p class="phone__field__mainText">09.12.1830</p>
+                                            <img src="assets/img/calendar-icon.svg" alt="" class="phone__field__img">
                                         </div>
-                                        <div class="phone__button">
-                                            <p class="phone__button__text">Отношения</p>
+                                    </div>
+                                    <div class="phone__buttons">
+                                        <div class="phone__button phone__button--one">
+                                            <p class="phone__button__text">Далее</p>
                                         </div>
                                     </div>
                                 </div><!-- phone__item -->
                             </div>
                             <div class="itc-slider__item">
                                 <div class="phone__item">
-                                    <p class="phone__title">Кого хотите найти?</p>
+                                    <p class="phone__title">Спасибо за регистрацию!</p>
+                                    <p class="phone__subtitle">Мы отправили на указанную почту dencreate@gmail.com ссылкe для подтверждения аккаунта, просьба пройти по нему и активировать аккаунт</p>
                                     <div class="phone__buttons">
-                                        <div class="phone__button">
-                                            <p class="phone__button__text">Друзей</p>
-                                        </div>
-                                        <div class="phone__button">
-                                            <p class="phone__button__text">Отношения</p>
+                                        <div class="phone__button phone__button--one">
+                                            <p class="phone__button__text">Отправить ещё раз</p>
                                         </div>
                                     </div>
                                 </div><!-- phone__item -->
                             </div>
                         </div>
                     </div>
-                    <ol class="itc-slider__indicators storis__indicators">
+                    <ol class="itc-slider__indicators storis__indicators storis__indicators_1">
                         <li class="itc-slider__indicator storis__indocator" data-slide-to="0"></li>
                         <li class="itc-slider__indicator storis__indocator" data-slide-to="1"></li>
                         <li class="itc-slider__indicator storis__indocator" data-slide-to="2"></li>
                         <li class="itc-slider__indicator storis__indocator" data-slide-to="3"></li>
                         <li class="itc-slider__indicator storis__indocator" data-slide-to="4"></li>
                     </ol>
-                </div>
+                </div><!-- itc-slider -->
             </div>
         </div><!-- phone__inner -->
         <img src="assets/img/arrow-down.svg" alt="" class="arrow__down">
@@ -236,7 +242,62 @@
             <li class="itc-slider__indicator storis__indocator" data-slide-to="4"></li>
         </ol>
     </div><!-- container -->
-</div><!-- page3 -->
+</main><!-- page3 -->
+
+<main class="page4">
+    <div class="container page4__container">
+        <main class="main page4__main">
+            <h2 class="title">Больше <span>активности</span></h2>
+            <p class="subtitle page3__subtitle">Пройдя тесты ты можешь не только знакомиться с людьми, но и ходить на разные мероприятия по выбранным интересам: на концерты, в бар в отличной компании, на спортивные мероприятия, на встречи с известными людьми и многое другое</p>
+            <a href="#" class="page1__btn__link">Хочу попробовать <img src="assets/img/link.svg" alt=""></a>
+            
+        </main>
+        <main class="main page4__main2">
+            <div class="itc-slider itc-slider__page4" data-slider="itc-slider" data-loop="true" data-autoplay="false" data-swipe="true">
+                <div class="itc-slider__wrapper">
+                    <div class="itc-slider__items">
+                        <div class="itc-slider__item">
+                            <div class="page4__item">
+                                <h2 class="title white__text">Творческие мероприятия</h2>
+                                <img src="assets/img/4pageguys1.png" alt="" class="page4__img">
+                            </div>
+                        </div>
+                        <div class="itc-slider__item">
+                            <div class="page4__item green">
+                                <h2 class="title white__text">Познавательные мероприятия</h2>
+                                <img src="assets/img/4pageguys2.png" alt="" class="page4__img">
+                            </div>
+                        </div>
+                        <div class="itc-slider__item">
+                            <div class="page4__item purple">
+                                <h2 class="title white__text">Спортивные мероприятия</h2>
+                                <img src="assets/img/4pageguys3.png" alt="" class="page4__img">
+                            </div>
+                        </div>
+                        <div class="itc-slider__item">
+                            <div class="page4__item pink">
+                                <h2 class="title white__text">Светские вечера</h2>
+                                <img src="assets/img/4pageguys4.png" alt="" class="page4__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ol class="itc-slider__indicators storis__indicators storis__indicators1__page4">
+                    <li class="itc-slider__indicator storis__indocator" data-slide-to="0"></li>
+                    <li class="itc-slider__indicator storis__indocator" data-slide-to="1"></li>
+                    <li class="itc-slider__indicator storis__indocator" data-slide-to="2"></li>
+                    <li class="itc-slider__indicator storis__indocator" data-slide-to="3"></li>
+                </ol>
+            </div><!-- itc-slider -->
+        </main><!-- main page4__main2 -->
+        <ol class="itc-slider__indicators storis__indicators storis__indicators2__page4">
+            <li class="itc-slider__indicator storis__indocator storis__indocator__page4 itc-slider__indicator_active" data-slide-to="0"></li>
+            <li class="itc-slider__indicator storis__indocator storis__indocator__page4" data-slide-to="1"></li>
+            <li class="itc-slider__indicator storis__indocator storis__indocator__page4" data-slide-to="2"></li>
+            <li class="itc-slider__indicator storis__indocator storis__indocator__page4" data-slide-to="3"></li>
+        </ol>
+    </div><!-- container page4__container -->
+</main><!-- page4 -->
 
 
 <script src="assets/js/itc-slider.js"></script>

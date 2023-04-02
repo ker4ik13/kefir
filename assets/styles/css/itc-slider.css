@@ -172,5 +172,23 @@
 .storis__indicators_2{
   position: absolute;
   top: 829px;
-  left: -139px;
+  left: -60px;
+}
+.storis__indicators1__page4{
+  z-index: -1;
+}
+.storis__indicators2__page4{
+  position: absolute;
+  top: 873px;
+  left: 98px;
+  z-index: 10;
+}
+.storis__indocator__page4{
+  cursor: pointer;
+}
+.storis__indicators2__page4::before{
+  content: none;
+}
+.storis__indicators2__page4::after{
+  content: none;
 }
