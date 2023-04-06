@@ -121,7 +121,6 @@
 }
 
 .itc-slider__indicator_active {
-  background-color: rgb(255 255 255 / 90%);
   transform: scale(1);
 }
 .storis__indicators {
@@ -173,6 +172,12 @@
   position: absolute;
   top: 829px;
   left: -60px;
+}
+.storis__indicators_2:before{
+  content: none;
+}
+.storis__indicators_2::after{
+  content: none;
 }
 .storis__indicators1__page4{
   z-index: -1;

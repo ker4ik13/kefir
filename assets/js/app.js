@@ -6,7 +6,14 @@
 
 
 
-
+// прокрутка с 1 до 3 секции
+const page1BtnWork = document.querySelector('.page1__btn__work');
+page1BtnWork.addEventListener('click', (e) => {
+    e.preventDefault;
+    let scrollPage = e.currentTarget;
+    let scrollLink = scrollPage.dataset.scroll;
+    document.querySelector(`#${scrollLink}`).scrollIntoView({behavior: "smooth"});
+});
 
 // прокрутка окна при клике на arrows
 const arrows = document.querySelectorAll('.arrow__down');
@@ -32,7 +39,7 @@ window.addEventListener('scroll', () => {
         opacity: 1,
         opacity: 0,
     };
-    if(userScroll >= page1Height - 200){
+    if(userScroll >= page1Height){
         document.querySelector('.page2__img1').animate(opacity0, 4000);
         document.querySelector('.page2__img2').animate(opacity1, 4000);
     } else {

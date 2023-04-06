@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/css/style.min.css">
     <link rel="stylesheet" href="assets/styles/css/itc-slider.css">
+    <link rel="stylesheet" href="assets/styles/css/style.min.css">
     <link rel="shortcut icon" href="/assets/img/..." type="image/x-icon">
     <title>Айри</title>
 </head>
@@ -27,7 +27,13 @@
                 <span></span>
                 <p class="nav__text">Меню</p>
                 <ul class="menu__list">
-                    <li class="menu__items">
+                    <li class="menu__title" data-mobile="mobile">
+                        <div class="menu__title__text">Меню</div>
+                        <div class="menu__title__close">
+                            <span class="menu__close"></span>
+                        </div>
+                    </li>
+                    <li class="menu__items" data-signIn="false">
                         <ul class="menu__items__list">
                             <li class="menu__item">
                                 <a href="#" class="menu__link">
@@ -100,7 +106,7 @@
                                     <img src="assets/img/nav/menu/arrow.svg" class="menu__arrow">
                                 </div></a>
                             </li>
-                            <li class="menu__item">
+                            <li class="menu__item" data-signIn="false">
                                 <a href="#" class="menu__link">
                                 <div class="menu__left">
                                     <div class="menu__icon__wrapper"><img src="assets/img/nav/menu/pay.svg" class="menu__icon"></div><p class="menu__link__text">Оплата</p>
@@ -120,7 +126,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="menu__items">
+                    <li class="menu__items" data-signIn="false">
                         <ul class="menu__items__list">
                             <li class="menu__item">
                                 <a href="#" class="menu__link">
@@ -155,7 +161,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="menu__items">
+                    <li class="menu__items" data-signIn="false">
                         <ul class="menu__items__list">
                             <li class="menu__item">
                                 <a href="#" class="menu__link">
@@ -177,13 +183,13 @@
 
 
 <main class="page1" id="page1">
-    <div class="container">
+    <div class="container page1__container">
         <main class="main">
-            <h1 class="title">Революционный способ <span>знакомств</span></h1>
-            <p class="subtitle">Искусственный интеллект бесплатно подберет для вас пару или друзей и организует встречу в безопасном месте</p>
+            <h1 class="title page1__title">Революционный способ <span>знакомств</span></h1>
+            <p class="subtitle page1__subtitle">Искусственный интеллект бесплатно подберет для вас пару или друзей и организует встречу в безопасном месте</p>
             <div class="page1__buttons">
                 <a href="#" class="page1__btn__link">Хочу попробовать <img src="assets/img/link.svg" alt=""></a>
-                <a href="#" class="page1__btn__work">Как это работает? <img src="assets/img/arrow-down.svg" alt=""></a>
+                <button class="page1__btn__work" data-scroll="page3">Как это работает? <img src="assets/img/arrow-down.svg" alt=""></button>
             </div>
         </main>
         <div class="phone__inner">
@@ -283,7 +289,7 @@
 </main><!-- page2 -->
 
 <main class="page3" id="page3">
-    <div class="container">
+    <div class="container page3__container">
         <div class="main">
             <h2 class="title">Как все это <span>работает</span></h2>
             <p class="subtitle page3__subtitle">Давайте я расскажу вам, как искусственный интеллект Айри находит людей, с которыми вам будет интересно и делает первое свидание безопасным</p>
@@ -368,11 +374,11 @@
                         </div>
                     </div>
                     <ol class="itc-slider__indicators storis__indicators storis__indicators_1">
-                        <li class="itc-slider__indicator storis__indocator" data-slide-to="0"></li>
-                        <li class="itc-slider__indicator storis__indocator" data-slide-to="1"></li>
-                        <li class="itc-slider__indicator storis__indocator" data-slide-to="2"></li>
-                        <li class="itc-slider__indicator storis__indocator" data-slide-to="3"></li>
-                        <li class="itc-slider__indicator storis__indocator" data-slide-to="4"></li>
+                        <li class="itc-slider__indicator storis__indocator storis__indocator1" data-slide-to="0"></li>
+                        <li class="itc-slider__indicator storis__indocator storis__indocator1" data-slide-to="1"></li>
+                        <li class="itc-slider__indicator storis__indocator storis__indocator1" data-slide-to="2"></li>
+                        <li class="itc-slider__indicator storis__indocator storis__indocator1" data-slide-to="3"></li>
+                        <li class="itc-slider__indicator storis__indocator storis__indocator1" data-slide-to="4"></li>
                     </ol>
                 </div><!-- itc-slider -->
             </div>
@@ -402,25 +408,25 @@
                     <div class="itc-slider__items">
                         <div class="itc-slider__item">
                             <div class="page4__item">
-                                <h2 class="title white__text">Творческие мероприятия</h2>
+                                <h2 class="title white__text page4__slider__title">Творческие мероприятия</h2>
                                 <img src="assets/img/4pageguys1.png" alt="" class="page4__img">
                             </div>
                         </div>
                         <div class="itc-slider__item">
                             <div class="page4__item green">
-                                <h2 class="title white__text">Познавательные мероприятия</h2>
+                                <h2 class="title white__text page4__slider__title">Познавательные мероприятия</h2>
                                 <img src="assets/img/4pageguys2.png" alt="" class="page4__img">
                             </div>
                         </div>
                         <div class="itc-slider__item">
                             <div class="page4__item purple">
-                                <h2 class="title white__text">Спортивные мероприятия</h2>
+                                <h2 class="title white__text page4__slider__title">Спортивные мероприятия</h2>
                                 <img src="assets/img/4pageguys3.png" alt="" class="page4__img">
                             </div>
                         </div>
                         <div class="itc-slider__item">
                             <div class="page4__item pink">
-                                <h2 class="title white__text">Светские вечера</h2>
+                                <h2 class="title white__text page4__slider__title">Светские вечера</h2>
                                 <img src="assets/img/4pageguys4.png" alt="" class="page4__img">
                             </div>
                         </div>
@@ -544,7 +550,7 @@
                                 <div class="tarif-plan">
                                     <div class="tarif__title">
                                         <p>Премиальный</p>
-                                        <img class="tarif__icon" src="assets/img/tarif-2.svg" alt="">
+                                        <img class="tarif__icon tarif__icon__prem" src="assets/img/tarif-2.svg" alt="">
                                     </div>
                                     <div class="tarif__disc tarif__premium">
                                         <p>Сэкономьте до 30% при переходе на этот тариф</p>
@@ -605,7 +611,7 @@
 
 <main class="page6" id="page6">
     <img src="assets/img/hands.png" alt="" class="page6__img">
-    <div class="container">
+    <div class="container page6__container">
         <main class="main">
             <h2 class="title white__text">Найдите свою <span>пару</span></h2>
             <p class="subtitle white__text page3__subtitle">А если вам не понравится первая встреча, вы всегда можете найти для себя нового знакомого.</p>
@@ -618,7 +624,7 @@
 <footer class="footer">
     <p class="footer__text">© ker4ik13, 2023 г.</p>
     <p class="footer__text">Учебный проект.</p>
-    <p class="footer__text">tg: <a class="footer__link" href="https://t.me/random_4el">@random_4el</a></p>
+    <p class="footer__text">tg: <a class="footer__link" href="https://t.me/ker4ik13">@ker4ik13</a></p>
     
 </footer>
 
