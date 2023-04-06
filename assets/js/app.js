@@ -4,7 +4,9 @@
 
 
 
-
+let navMenu = document.querySelector('.nav__menu');
+let logo = document.querySelector('.logo__img');
+let lockImg = document.querySelector('.login__img');
 
 // прокрутка с 1 до 3 секции
 const page1BtnWork = document.querySelector('.page1__btn__work');
@@ -27,9 +29,61 @@ arrows.forEach(arrow => {
 
 // page2
 
-const page1Height = document.getElementById('page1').offsetHeight;
+
+let page1H = document.querySelector('.page1').offsetHeight;
+let page2H = document.querySelector('.page2').offsetHeight;
+let page3H = document.querySelector('.page3').offsetHeight;
+let page4H = document.querySelector('.page4').offsetHeight;
+let page5H = document.querySelector('.page5').offsetHeight;
+let page6H = document.querySelector('.page6').offsetHeight;
+let page2Offset = page1H
+let page3Offset = page1H + page2H;
+let page4Offset = page1H + page2H + page3H ;
+let page5Offset = page1H + page2H + page3H + page4H;
+let page6Offset = page1H + page2H + page3H + page4H + page5H;
+
+let navTexts = document.querySelectorAll('.nav__text');
+
 window.addEventListener('scroll', () => {
+
+    // color text
     let userScroll = window.pageYOffset;
+    
+    let navTexts = document.querySelectorAll('.nav__text');
+
+    if(userScroll < page2Offset - 40){
+        navTexts.forEach(text => {
+            text.style.color = '#04242b';
+        });
+        logo.src ='assets/img/nav/logo/logo.svg';
+        lockImg.src = 'assets/img/nav/lock.svg';
+        navMenu.classList.remove('white__menu');
+    };
+    if(userScroll >= page2Offset - 40){
+        navTexts.forEach(text => {
+            text.style.color = '#fff';
+        });
+        logo.src ='assets/img/nav/logo/white-logo.svg';
+        lockImg.src = 'assets/img/nav/white-lock.svg';
+        navMenu.classList.add('white__menu');
+    };
+    if(userScroll >= page3Offset - 50){
+        navTexts.forEach(text => {
+            text.style.color = '#04242b';
+        });
+        logo.src ='assets/img/nav/logo/logo.svg';
+        lockImg.src = 'assets/img/nav/lock.svg';
+        navMenu.classList.remove('white__menu');
+    };
+    if(userScroll >= page6Offset - 50){
+        navTexts.forEach(text => {
+            text.style.color = '#fff';
+        });
+        logo.src ='assets/img/nav/logo/white-logo.svg';
+        lockImg.src = 'assets/img/nav/white-lock.svg';
+        navMenu.classList.add('white__menu');
+    };
+
     // анимация непрозрачности
     const opacity1 = {
         opacity: 0,
@@ -39,13 +93,17 @@ window.addEventListener('scroll', () => {
         opacity: 1,
         opacity: 0,
     };
-    if(userScroll >= page1Height){
+    if(userScroll >= page1H){
         document.querySelector('.page2__img1').animate(opacity0, 4000);
         document.querySelector('.page2__img2').animate(opacity1, 4000);
     } else {
         document.querySelector('.page2__img1').animate(opacity1, 4000);
         document.querySelector('.page2__img2').animate(opacity0, 4000);
     }
+
+
+
+
 });
 
 // page3

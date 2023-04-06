@@ -96,6 +96,10 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+.blur {
+  filter: blur(50px);
+}
+
 body {
   font-family: "NunitoSans";
   font-weight: 400;
@@ -153,6 +157,17 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.7;
 }
 
+.openCloseMenuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#closeMenu {
+  position: relative;
+  z-index: 100;
+}
+
 .nav__menu {
   display: flex;
   align-items: center;
@@ -190,6 +205,15 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #04242B;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
+}
+.nav__menu.white__menu span {
+  background-color: #fff;
+}
+.nav__menu.white__menu span::before {
+  background-color: #fff;
+}
+.nav__menu.white__menu span::after {
+  background-color: #fff;
 }
 .nav__menu.menu__active span {
   height: 0;
@@ -1456,6 +1480,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 500px) {
+  .menu__active #closeMenu {
+    background-color: #04242b;
+  }
+  .menu__active #closeMenu::before {
+    background-color: #04242b;
+  }
+  .menu__active #closeMenu::after {
+    background-color: #04242b;
+  }
   body.no-scroll {
     overflow: hidden;
   }

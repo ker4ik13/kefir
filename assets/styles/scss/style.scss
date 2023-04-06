@@ -5,6 +5,9 @@
 .skeleton img{
     display: none;
 }
+.blur{
+    filter: blur(50px);
+}
 body{
     font-family: 'NunitoSans';
     font-weight: 400;
@@ -58,6 +61,15 @@ h1, h2, h3, h4, h5, h6{
         opacity: .7;
     }
 }
+.openCloseMenuButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#closeMenu{
+    position: relative;
+    z-index: 100;
+}
 .nav__menu{
     display: flex;
     align-items: center;
@@ -94,7 +106,18 @@ h1, h2, h3, h4, h5, h6{
         background-color: #04242B;
         border-radius: 4px;
         transition: all .2s ease-in-out;
+    }
+    &.white__menu{
+        & span {
+            background-color: #fff;
         }
+        & span::before{
+            background-color: #fff;
+        }
+        & span::after{
+            background-color: #fff;
+        }
+    }
     &.menu__active span{
         height: 0;
     }
@@ -248,6 +271,7 @@ h1, h2, h3, h4, h5, h6{
 [data-mobile="mobile"]{
     display: none;
 }
+
 // Page 1
 
 .page1 {
@@ -1283,6 +1307,15 @@ h1, h2, h3, h4, h5, h6{
     }
 }
 @media(max-width: 500px){
+    .menu__active #closeMenu{
+        background-color: #04242b;
+        &::before{
+            background-color: #04242b;
+        }
+        &::after{
+            background-color: #04242b;
+        }
+    }
     body.no-scroll{
         overflow: hidden;
     }
