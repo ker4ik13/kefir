@@ -4,639 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/css/itc-slider.css">
-    <link rel="stylesheet" href="assets/styles/css/style.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/nav/logo/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/nav/logo/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/nav/logo/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/nav/logo/site.webmanifest">
-    <link rel="mask-icon" href="assets/img/nav/logo/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#00aba9">
+    <link rel="stylesheet" href="assets/styles/css/style.css">
+    <!-- Favicon -->
     <meta name="theme-color" content="#ffffff">
     
-    <title>Айри</title>
+    <title>Кефир</title>
 </head>
 <body>
-<header class="header">
-    <nav class="nav">
-        <div class="nav__left">
-            <a href="index.html"><img src="assets/img/nav/logo/logo.svg" alt="Айри" class="logo__img"></a>
-        </div>
-        <div class="nav__right">
-            <a href="#" class="nav__login">
-                <img src="assets/img/nav/lock.svg" alt="" class="login__img">
-                <p class="nav__text">Вход</p>
-            </a>
-            <div class="nav__register">
-                <a href="#" class="nav__text">Регистрация</a>
+    <!-- Header -->
+    <header class="header bg-gradient relative">
+        <div class="container">
+            <a href="#"><img src="./assets/img/logo.png" alt="Логотип" class="logo_img"></a>
+            <img src="./assets/img/2024.png" alt="2024 год" class="header_absolute">
+            <img src="./assets/img/gift.png" alt="Подарок" class="header_absolute2">
+
+            <div class="header_content">
+                <h2 class="header_title">Запоминающееся поздравление для ваших клиентов и партнёров</h2>
+                <h3 class="header_subtitle">Подарочные коллекционные NFT вашей компании</h3>
+                <a href="#" class="header_button">Жмякай</a>
             </div>
-            <div class="nav__menu">
-                <div class="openCloseMenuButton">
-                    <span id="closeMenu"></span>
-                    <p class="nav__text">Меню</p>
+        </div>
+    </header>
+
+    <!-- Second block -->
+    <div class="second_block gray-gradient relative">
+        <img src="./assets/img/bg-second.png" class="second-block-bg">
+        <div class="container flex-col">
+
+            <div class="second-card">
+                <div class="second-card-img">
+                    <img src="./assets/img/gift-icon.png" alt="Подарок" class="second-card-img-img">
                 </div>
-                <ul class="menu__list">
-                    <li class="menu__title" data-mobile="mobile">
-                        <div class="menu__title__text">Меню</div>
-                        <div class="menu__title__close">
-                        </div>
-                    </li>
-                    <li class="menu__items" data-signIn="false">
-                        <ul class="menu__items__list">
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                <div class="menu__left">
-                                    <div class="menu__icon__wrapper"><img src="assets/img/nav/menu/profile.svg" class="menu__icon"></div><p class="menu__link__text">Мой профиль</p>
-                                </div>
-                                <div class="menu__right">
-                                    <img src="assets/img/nav/menu/arrow.svg" class="menu__arrow">
-                                </div></a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__items">
-                        <ul class="menu__items__list">
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                <div class="menu__left">
-                                    <div class="menu__icon__wrapper"><img src="assets/img/nav/menu/owners.svg" class="menu__icon"></div><p class="menu__link__text">Основатели</p>
-                                </div>
-                                <div class="menu__right">
-                                    <img src="assets/img/nav/menu/arrow.svg" class="menu__arrow">
-                                </div></a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                <div class="menu__left">
-                                    <div class="menu__icon__wrapper"><img src="assets/img/nav/menu/news.svg" class="menu__icon"></div><p class="menu__link__text">Новости</p>
-                                </div>
-                                <div class="menu__right">
-                                    <img src="assets/img/nav/menu/arrow.svg" class="menu__arrow">
-                                </div></a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                <div class="menu__left">
-                                    <div class="menu__icon__wrapper"><img src="assets/img/nav/menu/about-proj.svg" class="menu__icon"></div><p class="menu__link__text">О проекте</p>
-                                </div>
-                                <div class="menu__right">
-                                    <img src="assets/img/nav/menu/arrow.svg" class="menu__arrow">
-                                </div></a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                <div class="menu__left">
-                                    <div class="menu__icon__wrapper"><img src="assets/img/nav/menu/recomends.svg" class="menu__icon"></div><p class="menu__link__text">Рекомендации</p>
-                                </div>
-                                <div class="menu__right">
-                                    <img src="assets/img/nav/menu/arrow.svg" class="menu__arrow">
-                                </div></a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                <div class="menu__left">
-                                    <div class="menu__icon__wrapper"><img src="assets/img/nav/menu/asks.svg" class="menu__icon"></div><p class="menu__link__text">Часто задаваемые вопросы</p>
-                                </div>
-                                <div class="menu__right">
-                                    <img src="assets/img/nav/menu/arrow.svg" class="menu__arrow">
-                                </div></a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__items">
-                        <ul class="menu__items__list">
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                <div class="menu__left">
-                                    <div class="menu__icon__wrapper"><img src="assets/img/nav/menu/tarifs.svg" class="menu__icon"></div><p class="menu__link__text">Тарифы</p>
-                                </div>
-                                <div class="menu__right">
-                                    <img src="assets/img/nav/menu/arrow.svg" class="menu__arrow">
-                                </div></a>
-                            </li>
-                            <li class="menu__item" data-signIn="false">
-                                <a href="#" class="menu__link">
-                                <div class="menu__left">
-                                    <div class="menu__icon__wrapper"><img src="assets/img/nav/menu/pay.svg" class="menu__icon"></div><p class="menu__link__text">Оплата</p>
-                                </div>
-                                <div class="menu__right">
-                                    <img src="assets/img/nav/menu/arrow.svg" class="menu__arrow">
-                                </div></a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                <div class="menu__left">
-                                    <div class="menu__icon__wrapper"><img src="assets/img/nav/menu/wallet.svg" class="menu__icon"></div><p class="menu__link__text">Об оплате и возврате средств</p>
-                                </div>
-                                <div class="menu__right">
-                                    <img src="assets/img/nav/menu/arrow.svg" class="menu__arrow">
-                                </div></a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__items" data-signIn="false">
-                        <ul class="menu__items__list">
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                <div class="menu__left">
-                                    <div class="menu__icon__wrapper"><img src="assets/img/nav/menu/black-list.svg" class="menu__icon"></div><p class="menu__link__text">Заблокированные пользователи</p>
-                                </div>
-                                <div class="menu__right">
-                                    <img src="assets/img/nav/menu/arrow.svg" class="menu__arrow">
-                                </div></a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__items">
-                        <ul class="menu__items__list">
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                <div class="menu__left">
-                                    <div class="menu__icon__wrapper"><img src="assets/img/nav/menu/terms-of-use.svg" class="menu__icon"></div><p class="menu__link__text">Пользовательское соглашение</p>
-                                </div>
-                                <div class="menu__right">
-                                    <img src="assets/img/nav/menu/arrow.svg" class="menu__arrow">
-                                </div></a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                <div class="menu__left">
-                                    <div class="menu__icon__wrapper"><img src="assets/img/nav/menu/secure.svg" class="menu__icon"></div><p class="menu__link__text">Обработка персональных данных</p>
-                                </div>
-                                <div class="menu__right">
-                                    <img src="assets/img/nav/menu/arrow.svg" class="menu__arrow">
-                                </div></a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__items" data-signIn="false">
-                        <ul class="menu__items__list">
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                <div class="menu__left">
-                                    <div class="menu__icon__wrapper"><img src="assets/img/nav/menu/exit.svg" class="menu__icon"></div><p class="menu__link__text">Выйти</p>
-                                </div>
-                                <div class="menu__right">
-                                    <img src="assets/img/nav/menu/arrow.svg" class="menu__arrow">
-                                </div></a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul><!-- menu__list -->
-            </div><!-- nav__menu -->
-        </div><!-- nav__right -->
-    </nav>
-</header>
-<script src="assets/js/menu.js"></script>
-
-
-<main class="page1" id="page1">
-    <div class="container page1__container">
-        <main class="main">
-            <h1 class="title page1__title">Революционный способ <span>знакомств</span></h1>
-            <p class="subtitle page1__subtitle">Искусственный интеллект бесплатно подберет для вас пару или друзей и организует встречу в безопасном месте</p>
-            <div class="page1__buttons">
-                <a href="#" class="page1__btn__link">Хочу попробовать <img src="assets/img/link.svg" alt=""></a>
-                <button class="page1__btn__work" data-scroll="page3">Как это работает? <img src="assets/img/arrow-down.svg" alt=""></button>
+                <div class="second-card-wrapper card-gradient">
+                    <p class="second-card-text">Возможность сделать сотни и тысячи подарков при разумном бюджете</p>
+                </div>
             </div>
-        </main>
-        <div class="phone__inner">
-            <header class="inner__nav">
-                <div class="back">
-                    <img src="assets/img/back.svg" alt="">
+            <div class="second-card">
+                <div class="second-card-img">
+                    <img src="./assets/img/trophy-icon.png" alt="Подарок" class="second-card-img-img">
                 </div>
-                <div class="nav__info">
-                    <div class="nav__name">
-                        <p class="nav__name__text">Маринэ</p>
-                        <img src="assets/img/crown.svg" alt="" class="nav__name__smile">
-                    </div>
-                    <div class="nav__online">
-                        <p class="nav__online__text">был(а) недавно</p>
-                    </div>
+                <div class="second-card-wrapper card-gradient">
+                    <p class="second-card-text">Выделят ваше поздравление
+                    из десятков «обычных»</p>
                 </div>
-            </header><!-- inner__nav -->
-            <main class="phone__profile">
-                <div class="profile__photo">
-                    <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="5000">
-                        <div class="itc-slider__wrapper">
-                          <div class="itc-slider__items">
-                            <div class="itc-slider__item">
-                              <div class="slider__photo">
-                                <img src="assets/img/girl-photo1.png" alt="">
-                              </div> 
-                            </div>
-                            <div class="itc-slider__item">
-                                <div class="slider__photo">
-                                    <img src="assets/img/girl-photo2.jpg" alt="">
-                                </div> 
-                            </div>
-                            <div class="itc-slider__item">
-                                <div class="slider__photo">
-                                    <img src="assets/img/girl-photo3.jpg" alt="">
-                                </div> 
-                            </div>
-                          </div>
-                        </div>
-                        <ol class="itc-slider__indicators">
-                            <li class="itc-slider__indicator" data-slide-to="0"></li>
-                            <li class="itc-slider__indicator" data-slide-to="1"></li>
-                            <li class="itc-slider__indicator" data-slide-to="2"></li>
-                          </ol>
-                      </div>
-                </div><!-- profile__photo -->
-                <div class="profile__discription">
-                    <p class="profile__text1">уровень совместимости</p>
-                    <div class="profile__blocks">
-                        <div class="profile__block">
-                            <div class="block__text">
-                                <p class="block__text1">Личность</p>
-                                <p class="block__text2">80%</p>
-                            </div>
-                            <div class="block__bar">
-                                <div class="block__bar__info bar1"></div>
-                            </div>
-                        </div>
-                        <div class="profile__block">
-                            <div class="block__text">
-                                <p class="block__text1">Увлечения</p>
-                                <p class="block__text2">50%</p>
-                            </div>
-                            <div class="block__bar">
-                                <div class="block__bar__info bar2"></div>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="second-card">
+                <div class="second-card-img">
+                    <img src="./assets/img/motivation-icon.png" alt="Подарок" class="second-card-img-img">
                 </div>
-            </main><!-- phone__profile -->
-        </div><!-- phone__inner -->
-        <div class="page1__phone">
-            <img class="phone-img1" src="assets/img/phone-img.svg" alt="">
-            <img class="phone-img2" src="assets/img/island.svg" alt="">
-            
-        </div>
-        <img src="assets/img/arrow-down.svg" alt="" class="arrow__down" data-scroll="page2">
-        <img src="assets/img/page1-img1.png" alt="" class="page1__img1">
-        <img src="assets/img/page1-img2.png" alt="" class="page1__img2">
-    </div><!-- container -->
-</main><!-- page1 -->
+                <div class="second-card-wrapper card-gradient">
+                    <p class="second-card-text">Сформируют положительные
+                    эмоциональные ассоциации
+                    с вашей компанией</p>
+                </div>
+            </div>
 
-<main class="page2" id="page2">
-    <div class="container">
-        <main class="main">
-            <h2 class="title white__text title__page2">Найти «своего» <span>человека<span></h2>
-            <p class="subtitle white__text">Вы считали, сколько времени и денег вы тратите, чтобы найти «своего» человека?</p>
-            <p class="subtitle white__text">Сколько свиданий заканчивается глубокими отношениями? Пять? Десять? Больше? Каждое свидание — это несколько часов и тысячи рублей на подготовку, дорогу и общение.</p>
-            <p class="subtitle white__text"> Мы нашли решение, как при помощи искусственного интеллекта сделать так, чтобы вы нашли интересного вам человека сразу.</p>
-            </main>
-        <div class="page2__img">
-            <img src="assets/img/page2-img1.png" alt="" class="page2__img1">
-            <img src="assets/img/page2-img2.png" alt="" class="page2__img2">
         </div>
-        <img src="assets/img/arrow-down-white.svg" alt="" class="arrow__down page2__arrow" data-scroll="page3">
     </div>
-</main><!-- page2 -->
 
-<main class="page3" id="page3">
-    <div class="container page3__container">
-        <div class="main">
-            <h2 class="title">Как все это <span>работает</span></h2>
-            <p class="subtitle page3__subtitle">Давайте я расскажу вам, как искусственный интеллект Айри находит людей, с которыми вам будет интересно и делает первое свидание безопасным</p>
-            <a href="#" class="page1__btn__link">Хочу попробовать <img src="assets/img/link.svg" alt=""></a>
-        </div><!-- main -->
-        <img src="assets/img/phone-img.svg" alt="" class="page3__phone__img">
-        <div class="phone__inner page3__phone__inner">
-            <div class="main">
-                <div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false" data-swipe="false">
-                    <div class="itc-slider__wrapper">
-                        <div class="itc-slider__items">
-                            <div class="itc-slider__item">
-                                <div class="phone__item">
-                                    <p class="phone__title">Привет, это Айри</p>
-                                    <p class="phone__subtitle">Привет, это Айри) Мне нужно задать вам 5 вопросов, чтобы дать доступ к анкетам, ок?</p>
-                                    <p class="phone__subtitle">Расскажите, кто вы?</p>
-                                    <div class="phone__buttons">
-                                        <div class="phone__button">
-                                            <p class="phone__button__text">Мужчина</p>
-                                        </div>
-                                        <div class="phone__button">
-                                            <p class="phone__button__text">Женщина</p>
-                                        </div>
-                                    </div>
-                                </div><!-- phone__item -->
-                            </div>
-                            <div class="itc-slider__item">
-                                <div class="phone__item">
-                                    <p class="phone__title">Кого хотите найти?</p>
-                                    <div class="phone__buttons">
-                                        <div class="phone__button">
-                                            <p class="phone__button__text">Друзей</p>
-                                        </div>
-                                        <div class="phone__button">
-                                            <p class="phone__button__text">Отношения</p>
-                                        </div>
-                                    </div>
-                                </div><!-- phone__item -->
-                            </div>
-                            <div class="itc-slider__item">
-                                <div class="phone__item">
-                                    <p class="phone__title">Как вас зовут?</p>
-                                    <div class="phone__field">
-                                        <p class="phone__field__upperText">Ваше имя</p>
-                                        <p class="phone__field__mainText">Денис</p>
-                                    </div>
-                                    <div class="phone__buttons">
-                                        <div class="phone__button phone__button--one">
-                                            <p class="phone__button__text">Далее</p>
-                                        </div>
-                                    </div>
-                                </div><!-- phone__item -->
-                            </div>
-                            <div class="itc-slider__item">
-                                <div class="phone__item">
-                                    <p class="phone__title">Когда у вас день рождение?</p>
-                                    <div class="phone__field">
-                                        <p class="phone__field__upperText">Выберите дату</p>
-                                        <div class="phone__field__inner">
-                                            <p class="phone__field__mainText">09.12.1830</p>
-                                            <img src="assets/img/calendar-icon.svg" alt="" class="phone__field__img">
-                                        </div>
-                                    </div>
-                                    <div class="phone__buttons">
-                                        <div class="phone__button phone__button--one">
-                                            <p class="phone__button__text">Далее</p>
-                                        </div>
-                                    </div>
-                                </div><!-- phone__item -->
-                            </div>
-                            <div class="itc-slider__item">
-                                <div class="phone__item">
-                                    <p class="phone__title">Спасибо за регистрацию!</p>
-                                    <p class="phone__subtitle">Мы отправили на указанную почту dencreate@gmail.com ссылкe для подтверждения аккаунта, просьба пройти по нему и активировать аккаунт</p>
-                                    <div class="phone__buttons">
-                                        <div class="phone__button phone__button--one">
-                                            <p class="phone__button__text">Отправить ещё раз</p>
-                                        </div>
-                                    </div>
-                                </div><!-- phone__item -->
-                            </div>
-                        </div>
-                    </div>
-                    <ol class="itc-slider__indicators storis__indicators storis__indicators_1">
-                        <li class="itc-slider__indicator storis__indocator storis__indocator1" data-slide-to="0"></li>
-                        <li class="itc-slider__indicator storis__indocator storis__indocator1" data-slide-to="1"></li>
-                        <li class="itc-slider__indicator storis__indocator storis__indocator1" data-slide-to="2"></li>
-                        <li class="itc-slider__indicator storis__indocator storis__indocator1" data-slide-to="3"></li>
-                        <li class="itc-slider__indicator storis__indocator storis__indocator1" data-slide-to="4"></li>
-                    </ol>
-                </div><!-- itc-slider -->
-            </div>
-        </div><!-- phone__inner -->
-        <img src="assets/img/arrow-down.svg" alt="" class="arrow__down" data-scroll="page4">
-        <ol class="itc-slider__indicators storis__indicators storis__indicators_2">
-            <li class="itc-slider__indicator storis__indocator itc-slider__indicator_active" data-slide-to="0"></li>
-            <li class="itc-slider__indicator storis__indocator" data-slide-to="1"></li>
-            <li class="itc-slider__indicator storis__indocator" data-slide-to="2"></li>
-            <li class="itc-slider__indicator storis__indocator" data-slide-to="3"></li>
-            <li class="itc-slider__indicator storis__indocator" data-slide-to="4"></li>
-        </ol>
-    </div><!-- container -->
-</main><!-- page3 -->
-
-<main class="page4" id="page4">
-    <div class="container double__container">
-        <main class="main page4__main">
-            <h2 class="title">Больше <span>активности</span></h2>
-            <p class="subtitle page3__subtitle">Пройдя тесты ты можешь не только знакомиться с людьми, но и ходить на разные мероприятия по выбранным интересам: на концерты, в бар в отличной компании, на спортивные мероприятия, на встречи с известными людьми и многое другое</p>
-            <a href="#" class="page1__btn__link">Хочу попробовать <img src="assets/img/link.svg" alt=""></a>
-            <img src="assets/img/arrow-down.svg" alt="" class="arrow__down arrow__down__page4" data-scroll="page5">  
-        </main>
-        <main class="main page4__main2">
-            <div class="itc-slider itc-slider__page4" data-slider="itc-slider" data-loop="true" data-autoplay="false" data-swipe="true">
-                <div class="itc-slider__wrapper">
-                    <div class="itc-slider__items">
-                        <div class="itc-slider__item">
-                            <div class="page4__item">
-                                <h2 class="title white__text page4__slider__title">Творческие мероприятия</h2>
-                                <img src="assets/img/4pageguys1.png" alt="" class="page4__img">
-                            </div>
-                        </div>
-                        <div class="itc-slider__item">
-                            <div class="page4__item green">
-                                <h2 class="title white__text page4__slider__title">Познавательные мероприятия</h2>
-                                <img src="assets/img/4pageguys2.png" alt="" class="page4__img">
-                            </div>
-                        </div>
-                        <div class="itc-slider__item">
-                            <div class="page4__item purple">
-                                <h2 class="title white__text page4__slider__title">Спортивные мероприятия</h2>
-                                <img src="assets/img/4pageguys3.png" alt="" class="page4__img">
-                            </div>
-                        </div>
-                        <div class="itc-slider__item">
-                            <div class="page4__item pink">
-                                <h2 class="title white__text page4__slider__title">Светские вечера</h2>
-                                <img src="assets/img/4pageguys4.png" alt="" class="page4__img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <ol class="itc-slider__indicators storis__indicators storis__indicators1__page4">
-                    <li class="itc-slider__indicator storis__indocator" data-slide-to="0"></li>
-                    <li class="itc-slider__indicator storis__indocator" data-slide-to="1"></li>
-                    <li class="itc-slider__indicator storis__indocator" data-slide-to="2"></li>
-                    <li class="itc-slider__indicator storis__indocator" data-slide-to="3"></li>
-                </ol>
-            </div><!-- itc-slider -->
-        </main><!-- main page4__main2 -->
-        <ol class="itc-slider__indicators storis__indicators storis__indicators2__page4">
-            <li class="itc-slider__indicator storis__indocator storis__indocator__page4 itc-slider__indicator_active" data-slide-to="0"></li>
-            <li class="itc-slider__indicator storis__indocator storis__indocator__page4" data-slide-to="1"></li>
-            <li class="itc-slider__indicator storis__indocator storis__indocator__page4" data-slide-to="2"></li>
-            <li class="itc-slider__indicator storis__indocator storis__indocator__page4" data-slide-to="3"></li>
-        </ol>
-    </div><!-- container page4__container -->
-</main><!-- page4 -->
-
-<main class="page5" id="page5">
-    <div class="container page5__container">
-        <main class="main page5__main">
-            <img src="assets/img/5pageguy.png" alt="" class="page5__img">
-            <h2 class="title title__page5">А так я получается <span>экономлю</span></h2>
-            <img src="assets/img/arrow-down.svg" alt="" class="arrow__down arrow__down__page5" data-scroll="page6">  
-            <ol class="itc-slider__indicators storis__indicators storis__indicators2__page5">
-                <li class="itc-slider__indicator storis__indocator storis__indocator__page5 itc-slider__indicator_active" data-slide-to="0"></li>
-                <li class="itc-slider__indicator storis__indocator storis__indocator__page5" data-slide-to="1"></li>
-                <li class="itc-slider__indicator storis__indocator storis__indocator__page5" data-slide-to="2"></li>
-            </ol>
-        </main>
-        <main class="main page5__main2">
-
-            <div class="itc-slider itc-slider__page5" data-slider="itc-slider" data-loop="true" data-autoplay="false" data-swipe="true">
-                <div class="itc-slider__wrapper">
-                    <div class="itc-slider__items">
-                        <div class="itc-slider__item">
-                            <div class="page5__item">
-                                <div class="tarif-plan">
-                                    <div class="tarif__title">
-                                        <p>Бесплатный</p>
-                                    </div>
-                                    <ul class="tarif__list">
-                                        <li class="tarif__list-item">Пробный период 1 месяц бесплатно</li>
-                                        <li class="tarif__list-item">Находите людей со 100% совместимостью</li>
-                                        <li class="tarif__list-item">Запретите видеться себя геолокации </li>
-                                        <li class="tarif__list-item">Скройтесь ото всех</li>
-                                    </ul>
-                                    <form class="tarif__mounths" action="#" method="post">
-                                        <input type="radio" id="tarif-1" name="tarif" value="1" checked>
-                                        <label class="tarif__mounths__item" for="tarif-1">
-                                            <div class="tarif__time">
-                                                <p class="tarif__title">Бессрочно</p>
-                                            </div>
-                                            <div class="tarif__price">
-                                                <p class="tarif__now">Бесплатно</p>
-                                            </div>
-                                        </label>
-                                        <button class="tarif__btn" type="submit">Выбрать тариф</button>
-                                    </form>
-                                </div><!-- tarif-plan -->
-                            </div><!-- page5__item -->
-                        </div>
-                        <div class="itc-slider__item">
-                            <div class="page5__item">
-                                <div class="tarif-plan">
-                                    <div class="tarif__title">
-                                        <p>Обычный</p>
-                                        <img class="tarif__icon" src="assets/img/tarif-1.svg" alt="">
-                                    </div>
-                                    <div class="tarif__disc">
-                                        <p>Сэкономьте до 30% при переходе на этот тариф</p>
-                                    </div>
-                                    <ul class="tarif__list">
-                                        <li class="tarif__list-item">Пробный период 1 месяц бесплатно</li>
-                                        <li class="tarif__list-item">Находите людей со 100% совместимостью</li>
-                                        <li class="tarif__list-item">Запретите видеться себя геолокации </li>
-                                        <li class="tarif__list-item">Скройтесь ото всех</li>
-                                    </ul>
-                                    <form class="tarif__mounths" action="#" method="post">
-                                        <input type="radio" id="tarif-2" name="tarif" value="2">
-                                        <label class="tarif__mounths__item" for="tarif-2">
-                                            <div class="tarif__time">
-                                                <p class="tarif__title">1 месяц</p>
-                                            </div>
-                                            <div class="tarif__price">
-                                                <p class="tarif__now">700 ₽</p>
-                                            </div>
-                                        </label>
-                                        <input type="radio" id="tarif-3"  name="tarif" value="3" checked>
-                                        <label class="tarif__mounths__item" for="tarif-3">
-                                            <div class="tarif__time">
-                                                <p class="tarif__title">6 месяцев</p>
-                                                <p class="tarif__subtitle">560 ₽ / месяц — экономия 20%</p>
-                                            </div>
-                                            <div class="tarif__price">
-                                                <p class="tarif__now">3 360 ₽</p>
-                                            </div>
-                                        </label>
-                                        <input type="radio" id="tarif-4"  name="tarif" value="4">
-                                        <label class="tarif__mounths__item" for="tarif-4">
-                                            <div class="tarif__time">
-                                                <p class="tarif__title">12 месяцев</p>
-                                                <p class="tarif__subtitle">490 ₽ / месяц — экономия 30%</p>
-                                            </div>
-                                            <div class="tarif__price">
-                                                <p class="tarif__now">5 880 ₽</p>
-                                                <p class="tarif__before">8400 ₽</p>
-                                            </div>
-                                        </label>
-                                        <button class="tarif__btn" type="submit">Выбрать тариф</button>
-                                    </form>
-                                </div><!-- tarif-plan -->
-                            </div><!-- page5__item -->
-                        </div>
-                        <div class="itc-slider__item">
-                            <div class="page5__item">
-                                <div class="tarif-plan">
-                                    <div class="tarif__title">
-                                        <p>Премиальный</p>
-                                        <img class="tarif__icon tarif__icon__prem" src="assets/img/tarif-2.svg" alt="">
-                                    </div>
-                                    <div class="tarif__disc tarif__premium">
-                                        <p>Сэкономьте до 30% при переходе на этот тариф</p>
-                                    </div>
-                                    <ul class="tarif__list">
-                                        <li class="tarif__list-item tarif__list-item-golden">Пробный период 1 месяц бесплатно</li>
-                                        <li class="tarif__list-item tarif__list-item-golden">Находите людей со 100% совместимостью</li>
-                                        <li class="tarif__list-item tarif__list-item-golden">Запретите видеться себя геолокации </li>
-                                        <li class="tarif__list-item tarif__list-item-golden">Скройтесь ото всех</li>
-                                    </ul>
-                                    <form class="tarif__mounths" action="#" method="post">
-                                        <input type="radio" id="tarif-5" name="tarif" value="5" class="golden__input">
-                                        <label class="tarif__mounths__item" for="tarif-5">
-                                            <div class="tarif__time">
-                                                <p class="tarif__title">1 месяц</p>
-                                            </div>
-                                            <div class="tarif__price">
-                                                <p class="tarif__now">4 900 ₽</p>
-                                            </div>
-                                        </label>
-                                        <input type="radio" id="tarif-6"  name="tarif" value="6" checked class="golden__input">
-                                        <label class="tarif__mounths__item" for="tarif-6">
-                                            <div class="tarif__time">
-                                                <p class="tarif__title">6 месяцев</p>
-                                                <p class="tarif__subtitle">3 920 ₽ / месяц — экономия 20%</p>
-                                            </div>
-                                            <div class="tarif__price">
-                                                <p class="tarif__now">23 520 ₽</p>
-                                            </div>
-                                        </label>
-                                        <input type="radio" id="tarif-7"  name="tarif" value="7" class="golden__input">
-                                        <label class="tarif__mounths__item" for="tarif-7">
-                                            <div class="tarif__time">
-                                                <p class="tarif__title">12 месяцев</p>
-                                                <p class="tarif__subtitle">43 430 ₽ / месяц — экономия 30%</p>
-                                            </div>
-                                            <div class="tarif__price">
-                                                <p class="tarif__now">41 160 ₽</p>
-                                                <p class="tarif__before">58 800 ₽</p>
-                                            </div>
-                                        </label>
-                                        <button class="tarif__btn" type="submit">Выбрать тариф</button>
-                                    </form>
-                                </div><!-- tarif-plan -->
-                            </div><!-- page5__item -->
-                        </div>
-                    </div>
-                </div>
-                <ol class="itc-slider__indicators storis__indicators storis__indicators1__page5">
-                    <li class="itc-slider__indicator storis__indocator" data-slide-to="0"></li>
-                    <li class="itc-slider__indicator storis__indocator" data-slide-to="1"></li>
-                    <li class="itc-slider__indicator storis__indocator" data-slide-to="2"></li>
-                </ol>
-            </div><!-- itc-slider -->
-        </main><!-- main -->
-    </div><!-- container page5__container -->
-</main><!-- page5 -->
-
-<main class="page6" id="page6">
-    <img src="assets/img/hands.png" alt="" class="page6__img">
-    <div class="container page6__container">
-        <main class="main">
-            <h2 class="title white__text">Найдите свою <span>пару</span></h2>
-            <p class="subtitle white__text page3__subtitle">А если вам не понравится первая встреча, вы всегда можете найти для себя нового знакомого.</p>
-            <a href="#" class="page1__btn__link">Хочу попробовать <img src="assets/img/link.svg" alt=""></a>
-            <img src="assets/img/arrow-down-white.svg" alt="" class="arrow__down arrow__down__page6" data-scroll="page5">
-        </main>
+    <!-- Third block -->
+    <div class="third_block relative overflow bg-gradient">
+        <div class="container">
+            <h3 class="third_block_title">Что такое NFT?</h3>
+            <p class="third_block_text">Это немного больше, чем “просто картинки”, хотя они тоже. NFT, в первую очередь, это уникальный цифровой сертификат который хранится в блокчейне. Он существует в единственном экземпляре, гарантирует оригинальность и закрепляет право собственности на него за конкретным владельцем.</p>
+            <div class="third_block_lasttext">Предлагаем выпустить корпоративную NFT-коллекцию вашей компании и подарить вашим клиентам и партнёрам.</div>
+            <p class="third_block_text">Она навечно останется в блокчейне, вплоть до скончания времён компьютерной эры!</p>
+        </div>
     </div>
-</main>
 
-<footer class="footer">
-    <p class="footer__text">© ker4ik13, 2023 г.</p>
-    <p class="footer__text">Учебный проект.</p>
-    <p class="footer__text">tg: <a class="footer__link" href="https://t.me/ker4ik13">@ker4ik13</a></p>
-    
-</footer>
-
-<script src="assets/js/itc-slider.js"></script>
-<script src="assets/js/app.js"></script>
 </body>
 </html>
