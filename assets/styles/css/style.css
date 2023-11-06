@@ -1135,6 +1135,7 @@ body {
     transform: translate(-50%, 0) skew(0);
     padding: 1.25rem;
     text-align: center;
+    justify-content: center;
   }
   .idea_comment p {
     transform: skew(0);
@@ -1151,6 +1152,10 @@ body {
   .prices_red_flag {
     max-width: 31.25rem;
     width: 100%;
+  }
+  .prices_text_rotate {
+    left: 1.875rem;
+    top: 15.625rem;
   }
 }
 @media (max-width: 43.75em) {
@@ -1268,5 +1273,30 @@ body {
   }
   .process_title {
     font-size: 1.75rem;
+  }
+}
+@media (max-width: 31.25em) {
+  .prices_text_rotate {
+    max-width: 12.5rem;
+    left: 4.375rem;
+    top: 15rem;
+  }
+  .idea_comment.first {
+    margin-top: 1.875rem;
+  }
+}
+@media (max-width: 25em) {
+  .prices_text_rotate {
+    max-width: 12.5rem;
+    left: 3.125rem;
+    top: 14.375rem;
+  }
+}
+@media (max-width: 21.875em) {
+  .prices_text_rotate {
+    max-width: 12.5rem;
+    left: 1.875rem;
+    top: 14.375rem;
+    font-size: 1rem;
   }
 }

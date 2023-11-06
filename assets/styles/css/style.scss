@@ -1043,6 +1043,7 @@ body {
     transform: translate(-50%, 0) skew(0);
     padding: rem(20);
     text-align: center;
+    justify-content: center;
 
     & p {
       transform: skew(0);
@@ -1062,6 +1063,10 @@ body {
   .prices_red_flag {
     max-width: rem(500);
     width: 100%;
+  }
+  .prices_text_rotate {
+    left: rem(30);
+    top: rem(250);
   }
 }
 @media (max-width: $max-700) {
@@ -1180,5 +1185,31 @@ body {
   }
   .process_title {
     font-size: rem(28);
+  }
+}
+
+@media (max-width: $max-500) {
+  .prices_text_rotate {
+    max-width: rem(200);
+    left: rem(70);
+    top: rem(240);
+  }
+  .idea_comment.first {
+    margin-top: rem(30);
+  }
+}
+@media (max-width: $max-400) {
+  .prices_text_rotate {
+    max-width: rem(200);
+    left: rem(50);
+    top: rem(230);
+  }
+}
+@media (max-width: $max-350) {
+  .prices_text_rotate {
+    max-width: rem(200);
+    left: rem(30);
+    top: rem(230);
+    font-size: rem(16);
   }
 }
