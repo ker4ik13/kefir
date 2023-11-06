@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap"); /* Обнуление */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
+/* Обнуление */
 * {
   padding: 0;
   margin: 0;
@@ -1252,5 +1253,20 @@ body {
   }
   .second-card.second {
     top: 31.375rem;
+  }
+  .header_title {
+    font-size: 1.875rem;
+  }
+  .header_button {
+    font-size: 1.25rem;
+  }
+  .blue_title {
+    font-size: 2rem;
+  }
+  .add_title {
+    font-size: 1.75rem;
+  }
+  .process_title {
+    font-size: 1.75rem;
   }
 }
