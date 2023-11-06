@@ -396,6 +396,12 @@ body {
 .idea_number.upper {
   top: -100px;
 }
+.idea_number.first {
+  position: absolute;
+  top: 16.25rem;
+  left: 6.25rem;
+  font-size: 5.625rem;
+}
 
 .idea_comment {
   padding: 1.25rem 6.25rem;
@@ -498,6 +504,7 @@ body {
 .santa2 {
   position: relative;
   left: -18.75rem;
+  top: 6rem;
 }
 
 .ready {
@@ -758,7 +765,7 @@ body {
 .process_bg {
   position: absolute;
   top: 18.75rem;
-  left: -18.75rem;
+  left: -12.5rem;
   z-index: 2;
 }
 
@@ -974,16 +981,17 @@ body {
   }
 }
 @media (max-width: 78.125em) {
-  .additionallt_vetka {
-    display: none;
+  .add_title {
+    max-width: 43.75rem;
   }
 }
 @media (max-width: 68.75em) {
   .ready_img_right {
-    display: none;
+    max-width: 25rem;
   }
   .ready_img_left {
-    display: none;
+    max-width: 15.625rem;
+    left: -10%;
   }
   .ready_title {
     text-align: center;
@@ -1098,6 +1106,12 @@ body {
     left: 50%;
     top: 60%;
   }
+  .idea_number.first {
+    position: relative;
+    font-size: 5.625rem;
+    top: 0;
+    left: 0;
+  }
   .idea.five {
     min-height: 56.25rem;
   }
@@ -1157,6 +1171,20 @@ body {
     left: 1.875rem;
     top: 15.625rem;
   }
+  .santa2 {
+    max-width: 25rem;
+    top: -12.5rem;
+  }
+  .ready_img_right {
+    right: -20%;
+  }
+  .ready_subtitle {
+    max-width: 31.25rem;
+  }
+  .additionallt_vetka {
+    max-width: 18.75rem;
+    top: 15.625rem;
+  }
 }
 @media (max-width: 43.75em) {
   .konfeti {
@@ -1194,16 +1222,45 @@ body {
     max-width: 22.625rem;
   }
   .third-img2 {
-    display: none;
+    max-width: 25rem;
+    right: -6.25rem;
+    top: 71.875rem;
   }
   .third-img1 {
-    display: none;
+    max-width: 18.75rem;
+    left: -6.25rem;
   }
   .third_block {
-    padding-top: 90rem;
+    padding-top: 100rem;
   }
   .third_block_title {
     font-size: 2rem;
+  }
+  .ready {
+    padding-top: 31.25rem;
+    padding-bottom: 12.5rem;
+  }
+  .additionallt_vetka {
+    top: 17.5rem;
+    right: 50%;
+    transform: translate(50%, 0);
+    width: 100%;
+  }
+  .additionally-content {
+    padding-top: 37.5rem;
+  }
+  .ready_img_left {
+    display: none;
+  }
+  .ready_img_right {
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 18.75rem;
+    width: 100%;
+  }
+  .ready {
+    padding-top: 25rem;
   }
 }
 @media (max-width: 37.5em) {
@@ -1283,6 +1340,9 @@ body {
   }
   .idea_comment.first {
     margin-top: 1.875rem;
+  }
+  .santa2 {
+    left: -6.25rem;
   }
 }
 @media (max-width: 25em) {

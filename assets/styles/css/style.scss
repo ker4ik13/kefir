@@ -305,6 +305,13 @@ body {
   &.upper {
     top: -100px;
   }
+
+  &.first {
+    position: absolute;
+    top: rem(260);
+    left: rem(100);
+    font-size: rem(90);
+  }
 }
 .idea_comment {
   padding: rem(20) rem(100);
@@ -407,6 +414,7 @@ body {
 .santa2 {
   position: relative;
   left: rem(-300);
+  top: 6rem;
 }
 
 // Ready
@@ -657,7 +665,7 @@ body {
 .process_bg {
   position: absolute;
   top: rem(300);
-  left: rem(-300);
+  left: rem(-200);
   z-index: 2;
 }
 .process_wrapper1 {
@@ -869,16 +877,17 @@ body {
   }
 }
 @media (max-width: $max-1250) {
-  .additionallt_vetka {
-    display: none;
+  .add_title {
+    max-width: rem(700);
   }
 }
 @media (max-width: $max-1100) {
   .ready_img_right {
-    display: none;
+    max-width: rem(400);
   }
   .ready_img_left {
-    display: none;
+    max-width: rem(250);
+    left: -10%;
   }
   .ready_title {
     text-align: center;
@@ -1005,6 +1014,14 @@ body {
     left: 50%;
     top: 60%;
   }
+  .idea_number {
+    &.first {
+      position: relative;
+      font-size: rem(90);
+      top: 0;
+      left: 0;
+    }
+  }
   .idea.five {
     min-height: rem(900);
   }
@@ -1068,6 +1085,20 @@ body {
     left: rem(30);
     top: rem(250);
   }
+  .santa2 {
+    max-width: rem(400);
+    top: rem(-200);
+  }
+  .ready_img_right {
+    right: -20%;
+  }
+  .ready_subtitle {
+    max-width: rem(500);
+  }
+  .additionallt_vetka {
+    max-width: rem(300);
+    top: rem(250);
+  }
 }
 @media (max-width: $max-700) {
   .konfeti {
@@ -1106,16 +1137,46 @@ body {
     max-width: 22.625rem;
   }
   .third-img2 {
-    display: none;
+    max-width: rem(400);
+    right: rem(-100);
+    top: rem(1150);
   }
   .third-img1 {
-    display: none;
+    max-width: rem(300);
+    left: rem(-100);
   }
   .third_block {
-    padding-top: 90rem;
+    padding-top: rem(1600);
   }
   .third_block_title {
     font-size: rem(32);
+  }
+  .ready {
+    padding-top: rem(500);
+    padding-bottom: rem(200);
+  }
+  .additionallt_vetka {
+    top: rem(280);
+    right: 50%;
+    transform: translate(50%, 0);
+    width: 100%;
+  }
+  .additionally-content {
+    padding-top: rem(600);
+  }
+
+  .ready_img_left {
+    display: none;
+  }
+  .ready_img_right {
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: rem(300);
+    width: 100%;
+  }
+  .ready {
+    padding-top: rem(400);
   }
 }
 @media (max-width: $max-600) {
@@ -1196,6 +1257,9 @@ body {
   }
   .idea_comment.first {
     margin-top: rem(30);
+  }
+  .santa2 {
+    left: rem(-100);
   }
 }
 @media (max-width: $max-400) {
