@@ -844,7 +844,20 @@ body {
   margin-top: rem(80);
   text-align: center;
 }
-
+@media (min-width: $max-1350) {
+  .second_block-bg {
+    height: rem(1500);
+    max-width: none;
+    width: 100%;
+  }
+  .additionally-bg {
+    margin-top: rem(-200);
+  }
+  .process {
+    margin-top: rem(-500);
+    padding-top: rem(600);
+  }
+}
 @media (max-width: $max-1350) {
   .header_absolute2 {
     right: rem(100);

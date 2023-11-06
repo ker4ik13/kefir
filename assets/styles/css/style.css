@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
-/* Обнуление */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap"); /* Обнуление */
 * {
   padding: 0;
   margin: 0;
@@ -949,6 +948,20 @@ body {
   text-align: center;
 }
 
+@media (min-width: 84.375em) {
+  .second_block-bg {
+    height: 93.75rem;
+    max-width: none;
+    width: 100%;
+  }
+  .additionally-bg {
+    margin-top: -12.5rem;
+  }
+  .process {
+    margin-top: -31.25rem;
+    padding-top: 37.5rem;
+  }
+}
 @media (max-width: 84.375em) {
   .header_absolute2 {
     right: 6.25rem;
