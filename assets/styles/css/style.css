@@ -1149,6 +1149,43 @@ body {
   .prices_text_default {
     font-size: 1.25rem;
   }
+  .process_row {
+    justify-content: flex-start;
+  }
+  .process_row.revert {
+    justify-content: flex-start;
+  }
+  .process_wrapper {
+    width: 100%;
+  }
+  .process_card_text {
+    width: 100%;
+  }
+  .third_block_lasttext {
+    font-size: 1.125rem;
+  }
+  .header_absolute2 {
+    max-width: 25rem;
+    bottom: -18.75rem;
+  }
+  .header {
+    height: 75rem;
+  }
+  .second-card {
+    max-width: 22.625rem;
+  }
+  .third-img2 {
+    display: none;
+  }
+  .third-img1 {
+    display: none;
+  }
+  .third_block {
+    padding-top: 90rem;
+  }
+  .third_block_title {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 37.5em) {
   .prices_text_rotate {
@@ -1156,7 +1193,23 @@ body {
     left: 2.5rem;
   }
   .process_card {
-    transform: scale(0.8);
+    max-width: 23.75rem;
+    width: 100%;
+  }
+  .process_card_number {
+    font-size: 1.875rem;
+    width: 5.625rem;
+    height: 5.625rem;
+  }
+  .process_wrapper {
+    left: 1.875rem;
+    top: 1.875rem;
+  }
+  .process_card_text {
+    left: 0.625rem;
+    top: 0.625rem;
+    padding: 1.875rem 1.25rem 1.25rem 3.25rem;
+    height: auto;
   }
   .process_cards {
     gap: 2.5rem;
@@ -1169,5 +1222,22 @@ body {
   .submit-button {
     font-size: 1.25rem;
     padding: 1.25rem 4.375rem;
+  }
+  .idea_photo {
+    max-width: 25rem;
+  }
+  .process_title2 {
+    font-size: 2rem;
+  }
+  .process_blue-text {
+    max-width: 25rem;
+  }
+  .second-card.second,
+  .second-card.third {
+    transform: rotate(0);
+    left: 10%;
+  }
+  .second-card.second {
+    top: 31.375rem;
   }
 }
