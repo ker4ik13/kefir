@@ -78,6 +78,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -673,6 +677,7 @@ body {
   max-width: 35.3125rem;
   font-weight: 500;
   line-height: 1.2;
+  width: 100%;
 }
 .why-like_item img {
   width: 100%;
@@ -683,6 +688,8 @@ body {
 
 .additionally {
   margin-top: -16.25rem;
+  position: relative;
+  z-index: 200;
 }
 
 .additionallt_vetka {
@@ -940,4 +947,227 @@ body {
   line-height: 1.2;
   margin-top: 5rem;
   text-align: center;
+}
+
+@media (max-width: 84.375em) {
+  .header_absolute2 {
+    right: 6.25rem;
+    max-width: 37.5rem;
+    bottom: -12.5rem;
+  }
+  .additionally-bg {
+    min-height: 125rem;
+  }
+}
+@media (max-width: 78.125em) {
+  .additionallt_vetka {
+    display: none;
+  }
+}
+@media (max-width: 68.75em) {
+  .ready_img_right {
+    display: none;
+  }
+  .ready_img_left {
+    display: none;
+  }
+  .ready_title {
+    text-align: center;
+  }
+  .ready_subtitle {
+    text-align: center;
+    margin-top: 3.125rem;
+    width: 100%;
+  }
+}
+@media (max-width: 62.5em) {
+  .header {
+    padding-bottom: 31.25rem;
+  }
+  .header_absolute2 {
+    right: 50%;
+    bottom: -37.5rem;
+    transform: translate(50%, 0);
+  }
+  .header_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 28.125rem;
+    text-align: center;
+  }
+  .header_absolute {
+    right: 50%;
+    transform: translate(50%, 0);
+    top: 12.5rem;
+  }
+  .second-card:nth-child(2n) {
+    top: 34.375rem;
+    left: 10%;
+  }
+  .second-card:last-child {
+    top: 62.5rem;
+    right: 10%;
+  }
+  .second_block-bg {
+    height: 125rem;
+  }
+  .prices .container {
+    top: 6.25rem;
+  }
+  .prices .row.end {
+    justify-content: center;
+  }
+  .row.mt-80 {
+    margin: 0 auto;
+    margin-top: 11.25rem;
+    max-width: 37.5rem;
+    justify-content: center;
+  }
+  .third_block {
+    padding-top: 106.25rem;
+  }
+  .third-img1 {
+    top: 75rem;
+  }
+  .third-img2 {
+    top: 75rem;
+  }
+  .idea_first_img {
+    max-width: 53.125rem;
+    width: 100%;
+  }
+  .konfeti,
+  .konfeti2 {
+    max-width: 23.75rem;
+    width: 100%;
+  }
+  .idea_title {
+    font-size: 1.75rem;
+  }
+  .idea_comment {
+    left: 50%;
+    transform: translate(-50%, 0) skew(-30deg);
+  }
+  .idea_comment p {
+    transform: skew(30deg);
+  }
+  .idea_comment.revert {
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, 0) skew(30deg);
+  }
+  .idea_comment.revert p {
+    transform: skew(-30deg);
+  }
+  .idea_comment.revert.upper {
+    top: 7.5rem;
+  }
+  .idea_comment.big {
+    top: 6.25rem;
+  }
+  .idea_photos {
+    margin: 0 auto;
+    margin-top: 9.375rem;
+    justify-content: center;
+    max-width: 38.125rem;
+    width: 100%;
+  }
+  .idea_photos.revert {
+    justify-content: center;
+  }
+  .idea_photos.big {
+    margin: 0 auto;
+    margin-top: 12.5rem;
+  }
+  .idea_photo.photo3 {
+    left: 50%;
+    top: 60%;
+  }
+  .idea.five {
+    min-height: 56.25rem;
+  }
+  .process_bg {
+    display: none;
+  }
+  .process_wrapper1 {
+    justify-content: center;
+  }
+}
+@media (max-width: 56.25em) {
+  .prices_cards {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 1.875rem;
+  }
+  .prices-bg {
+    height: 81.25rem;
+  }
+  .add_item_img {
+    max-width: 9.375rem;
+    width: 100%;
+  }
+  .add_item {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+  }
+  .idea_photo {
+    max-width: 31.25rem;
+  }
+  .idea_comment {
+    font-size: 1rem;
+    transform: translate(-50%, 0) skew(0);
+    padding: 1.25rem;
+    text-align: center;
+  }
+  .idea_comment p {
+    transform: skew(0);
+    font-size: 1.125rem;
+    text-align: center;
+  }
+  .idea_comment.revert {
+    transform: translate(-50%) skew(0);
+  }
+  .idea_comment.revert p {
+    transform: skew(0);
+    text-align: center;
+  }
+  .prices_red_flag {
+    max-width: 31.25rem;
+    width: 100%;
+  }
+}
+@media (max-width: 43.75em) {
+  .konfeti {
+    display: none;
+  }
+  .konfeti2 {
+    display: none;
+  }
+  .prices_text_default {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .prices_text_rotate {
+    top: 15.5rem;
+    left: 2.5rem;
+  }
+  .process_card {
+    transform: scale(0.8);
+  }
+  .process_cards {
+    gap: 2.5rem;
+  }
+  .input {
+    max-width: 25rem;
+    padding: 0.625rem 1.875rem;
+    font-size: 1.125rem;
+  }
+  .submit-button {
+    font-size: 1.25rem;
+    padding: 1.25rem 4.375rem;
+  }
 }

@@ -6,6 +6,9 @@
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
 }
@@ -574,6 +577,7 @@ body {
   max-width: rem(565);
   font-weight: 500;
   line-height: 1.2;
+  width: 100%;
 
   & img {
     width: 100%;
@@ -587,6 +591,8 @@ body {
 // Additionally
 .additionally {
   margin-top: rem(-260);
+  position: relative;
+  z-index: 200;
 }
 .additionallt_vetka {
   position: absolute;
@@ -837,4 +843,243 @@ body {
   line-height: 1.2;
   margin-top: rem(80);
   text-align: center;
+}
+
+@media (max-width: $max-1350) {
+  .header_absolute2 {
+    right: rem(100);
+    max-width: rem(600);
+    bottom: rem(-200);
+  }
+  .additionally-bg {
+    min-height: rem(2000);
+  }
+}
+@media (max-width: $max-1250) {
+  .additionallt_vetka {
+    display: none;
+  }
+}
+@media (max-width: $max-1100) {
+  .ready_img_right {
+    display: none;
+  }
+  .ready_img_left {
+    display: none;
+  }
+  .ready_title {
+    text-align: center;
+  }
+  .ready_subtitle {
+    text-align: center;
+    margin-top: rem(50);
+    width: 100%;
+  }
+}
+@media (max-width: $max-1000) {
+  .header {
+    padding-bottom: rem(500);
+  }
+  .header_absolute2 {
+    right: 50%;
+    bottom: rem(-600);
+    transform: translate(50%, 0);
+  }
+  .header_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: rem(450);
+    text-align: center;
+  }
+  .header_absolute {
+    right: 50%;
+    transform: translate(50%, 0);
+    top: rem(200);
+  }
+  .second-card {
+    &:nth-child(2n) {
+      // transform: rotate(0);
+      top: rem(550);
+      left: 10%;
+    }
+
+    &:last-child {
+      // transform: rotate(0);
+      top: rem(1000);
+      right: 10%;
+    }
+  }
+  .second_block-bg {
+    height: rem(2000);
+  }
+  .prices .container {
+    top: rem(100);
+  }
+  .prices .row.end {
+    justify-content: center;
+  }
+  .row.mt-80 {
+    margin: 0 auto;
+    margin-top: rem(180);
+    max-width: rem(600);
+    justify-content: center;
+  }
+  .third_block {
+    padding-top: rem(1700);
+  }
+  .third-img1 {
+    top: rem(1200);
+  }
+  .third-img2 {
+    top: rem(1200);
+  }
+  .idea_first_img {
+    max-width: rem(850);
+    width: 100%;
+  }
+  .konfeti,
+  .konfeti2 {
+    max-width: rem(380);
+    width: 100%;
+  }
+  .idea_title {
+    font-size: rem(28);
+  }
+  .idea_comment {
+    left: 50%;
+    transform: translate(-50%, 0) skew(-30deg);
+
+    & p {
+      transform: skew(30deg);
+    }
+
+    &.revert {
+      right: auto;
+      left: 50%;
+      transform: translate(-50%, 0) skew(30deg);
+
+      & p {
+        transform: skew(-30deg);
+      }
+
+      &.upper {
+        top: rem(120);
+      }
+    }
+
+    &.big {
+      top: rem(100);
+    }
+  }
+  .idea_photos {
+    margin: 0 auto;
+    margin-top: rem(150);
+    justify-content: center;
+    max-width: rem(610);
+    width: 100%;
+
+    &.revert {
+      justify-content: center;
+    }
+
+    &.big {
+      margin: 0 auto;
+      margin-top: rem(200);
+    }
+  }
+  .idea_photo.photo3 {
+    left: 50%;
+    top: 60%;
+  }
+  .idea.five {
+    min-height: rem(900);
+  }
+  .process_bg {
+    display: none;
+  }
+  .process_wrapper1 {
+    justify-content: center;
+  }
+}
+
+@media (max-width: $max-900) {
+  .prices_cards {
+    flex-direction: column;
+    align-items: center;
+    margin-top: rem(80);
+    gap: rem(30);
+  }
+  .prices-bg {
+    height: rem(1300);
+  }
+  .add_item_img {
+    max-width: rem(150);
+    width: 100%;
+  }
+  .add_item {
+    flex-direction: column;
+    align-items: center;
+    gap: rem(30);
+  }
+  .idea_photo {
+    max-width: rem(500);
+  }
+  .idea_comment {
+    font-size: rem(16);
+    transform: translate(-50%, 0) skew(0);
+    padding: rem(20);
+    text-align: center;
+
+    & p {
+      transform: skew(0);
+      font-size: rem(18);
+      text-align: center;
+    }
+
+    &.revert {
+      transform: translate(-50%) skew(0);
+
+      & p {
+        transform: skew(0);
+        text-align: center;
+      }
+    }
+  }
+  .prices_red_flag {
+    max-width: rem(500);
+    width: 100%;
+  }
+}
+@media (max-width: $max-700) {
+  .konfeti {
+    display: none;
+  }
+  .konfeti2 {
+    display: none;
+  }
+  .prices_text_default {
+    font-size: rem(20);
+  }
+}
+@media (max-width: $max-600) {
+  .prices_text_rotate {
+    top: 15.5rem;
+    left: 2.5rem;
+  }
+  .process_card {
+    transform: scale(0.8);
+  }
+  .process_cards {
+    gap: rem(40);
+  }
+  .input {
+    max-width: rem(400);
+    padding: rem(10) rem(30);
+    font-size: rem(18);
+  }
+  .submit-button {
+    font-size: rem(20);
+    padding: rem(20) rem(70);
+  }
 }
