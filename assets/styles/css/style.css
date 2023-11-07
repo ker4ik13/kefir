@@ -182,14 +182,15 @@ body {
 }
 
 .header_button {
-  padding: 1.125rem 8.75rem;
-  font-weight: 600;
+  padding: 1.125rem 7.5rem;
   color: #071925;
   font-size: 2rem;
   line-height: 1.2;
   background-color: #fff;
   border: 5px dashed #c8c8c8;
   border-radius: 3.125rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .flex-col {
@@ -399,10 +400,12 @@ body {
   top: -100px;
 }
 .idea_number.first {
-  position: absolute;
-  top: 16.25rem;
-  left: 6.25rem;
-  font-size: 5.625rem;
+  margin-top: -1.25rem;
+}
+@media (max-width: 62.5em) {
+  .idea_number.first {
+    margin-top: 0rem;
+  }
 }
 
 .idea_comment {
@@ -776,6 +779,7 @@ body {
 
 .add_item_text {
   max-width: 28.125rem;
+  font-size: 1.25rem;
 }
 
 .process {
@@ -951,6 +955,21 @@ body {
   text-align: center;
   color: #bcbbbb;
 }
+.input.mini::-moz-placeholder {
+  font-size: 1.5rem;
+}
+.input.mini::placeholder {
+  font-size: 1.5rem;
+}
+
+.non {
+  color: #bcbbbb;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0.625rem;
+  line-height: 1.2;
+}
 
 .submit-button {
   padding: 1.125rem 6.25rem;
@@ -1047,13 +1066,20 @@ body {
     transform: translate(50%, 0);
     top: 12.5rem;
   }
+  .second-card {
+    height: auto;
+  }
   .second-card:nth-child(2n) {
-    top: 34.375rem;
-    left: 10%;
+    position: static;
+    transform: translate(0, 0) rotate(0);
   }
   .second-card:last-child {
-    top: 62.5rem;
-    right: 10%;
+    position: static;
+    transform: translate(0, 0) rotate(0);
+  }
+  .flex-col {
+    flex-direction: column;
+    gap: 1.875rem;
   }
   .second_block-bg {
     height: 125rem;
@@ -1282,6 +1308,7 @@ body {
     transform: translate(-50%, 0);
     max-width: 18.75rem;
     width: 100%;
+    top: -30rem;
   }
   .ready {
     padding-top: 25rem;
@@ -1331,14 +1358,6 @@ body {
   }
   .process_blue-text {
     max-width: 25rem;
-  }
-  .second-card.second,
-  .second-card.third {
-    transform: rotate(0);
-    left: 10%;
-  }
-  .second-card.second {
-    top: 31.375rem;
   }
   .header_title {
     font-size: 1.875rem;

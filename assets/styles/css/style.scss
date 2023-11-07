@@ -94,14 +94,15 @@ body {
   margin-bottom: rem(100);
 }
 .header_button {
-  padding: rem(18) rem(140);
-  font-weight: 600;
+  padding: rem(18) rem(120);
   color: #071925;
   font-size: rem(32);
   line-height: 1.2;
   background-color: #fff;
   border: 5px dashed #c8c8c8;
   border-radius: rem(50);
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 // Second block
@@ -309,10 +310,11 @@ body {
   }
 
   &.first {
-    position: absolute;
-    top: rem(260);
-    left: rem(100);
-    font-size: rem(90);
+    margin-top: rem(-20);
+
+    @media (max-width: $max-1000) {
+      margin-top: rem(0);
+    }
   }
 }
 .idea_comment {
@@ -672,6 +674,7 @@ body {
 }
 .add_item_text {
   max-width: rem(450);
+  font-size: rem(20);
 }
 
 // Process
@@ -845,6 +848,31 @@ body {
     text-align: center;
     color: #bcbbbb;
   }
+  &.mini {
+    &::-webkit-input-placeholder {
+      font-size: rem(24);
+    }
+    &::-moz-placeholder {
+      font-size: rem(24);
+    }
+    &:-ms-input-placeholder {
+      font-size: rem(24);
+    }
+    &::-ms-input-placeholder {
+      font-size: rem(24);
+    }
+    &::placeholder {
+      font-size: rem(24);
+    }
+  }
+}
+.non {
+  color: #bcbbbb;
+  font-size: rem(24);
+  font-weight: 500;
+  text-align: center;
+  margin-top: rem(10);
+  line-height: 1.2;
 }
 .submit-button {
   padding: rem(18) rem(100);
@@ -942,16 +970,19 @@ body {
   }
   .second-card {
     &:nth-child(2n) {
-      // transform: rotate(0);
-      top: rem(550);
-      left: 10%;
+      position: static;
+      transform: translate(0, 0) rotate(0);
     }
 
     &:last-child {
-      // transform: rotate(0);
-      top: rem(1000);
-      right: 10%;
+      position: static;
+      transform: translate(0, 0) rotate(0);
     }
+    height: auto;
+  }
+  .flex-col {
+    flex-direction: column;
+    gap: rem(30);
   }
   .second_block-bg {
     height: rem(2000);
@@ -1195,6 +1226,7 @@ body {
     transform: translate(-50%, 0);
     max-width: rem(300);
     width: 100%;
+    top: rem(-480);
   }
   .ready {
     padding-top: rem(400);
@@ -1244,14 +1276,6 @@ body {
   }
   .process_blue-text {
     max-width: rem(400);
-  }
-  .second-card.second,
-  .second-card.third {
-    transform: rotate(0);
-    left: 10%;
-  }
-  .second-card.second {
-    top: 31.375rem;
   }
   .header_title {
     font-size: rem(30);
