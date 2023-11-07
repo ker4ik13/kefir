@@ -245,8 +245,10 @@ body {
   line-height: 1.2;
   color: #f3f3f3;
   text-align: center;
-  background-image: url("../../img/card2-bg.png");
-  background-size: cover;
+  border-top: 6px dashed #d9d9d9;
+  border-right: 6px dashed #d9d9d9;
+  border-left: 6px dashed #d9d9d9;
+  background: linear-gradient(180deg, #a05cfc 0%, #7e22f0 100%);
 }
 
 // Idea block
@@ -368,6 +370,10 @@ body {
       left: 0;
     }
   }
+
+  &.first {
+    margin-top: rem(100);
+  }
 }
 .idea_photo_filter {
   position: relative;
@@ -434,9 +440,13 @@ body {
 }
 .ready_img_right {
   position: absolute;
-  top: rem(-100);
-  right: rem(-100);
+  top: rem(-150);
+  right: rem(0);
   z-index: 0;
+
+  @media (max-width: em(1250)) {
+    right: rem(-80);
+  }
 }
 .ready_subtitle {
   margin: 0 auto;
@@ -446,6 +456,13 @@ body {
   font-weight: 500;
   color: #f1f4ff;
   max-width: rem(600);
+}
+.ready_title {
+  font-size: rem(60);
+  color: #16338b;
+  line-height: 1.2;
+  font-weight: 900;
+  text-align: center;
 }
 
 // Prices
@@ -595,7 +612,9 @@ body {
     align-self: end;
   }
 }
-
+.w-full {
+  max-width: rem(1700);
+}
 // Additionally
 .additionally {
   margin-top: rem(-260);
@@ -884,6 +903,7 @@ body {
 @media (max-width: $max-1100) {
   .ready_img_right {
     max-width: rem(400);
+    top: rem(-100);
   }
   .ready_img_left {
     max-width: rem(250);
@@ -891,6 +911,7 @@ body {
   }
   .ready_title {
     text-align: center;
+    font-size: rem(50);
   }
   .ready_subtitle {
     text-align: center;

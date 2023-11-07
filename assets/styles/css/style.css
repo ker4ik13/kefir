@@ -338,8 +338,10 @@ body {
   line-height: 1.2;
   color: #f3f3f3;
   text-align: center;
-  background-image: url("../../img/card2-bg.png");
-  background-size: cover;
+  border-top: 6px dashed #d9d9d9;
+  border-right: 6px dashed #d9d9d9;
+  border-left: 6px dashed #d9d9d9;
+  background: linear-gradient(180deg, #a05cfc 0%, #7e22f0 100%);
 }
 
 .idea {
@@ -454,6 +456,9 @@ body {
   right: auto;
   left: 0;
 }
+.idea_photos.first {
+  margin-top: 6.25rem;
+}
 
 .idea_photo_filter {
   position: relative;
@@ -524,9 +529,14 @@ body {
 
 .ready_img_right {
   position: absolute;
-  top: -6.25rem;
-  right: -6.25rem;
+  top: -9.375rem;
+  right: 0rem;
   z-index: 0;
+}
+@media (max-width: 78.125em) {
+  .ready_img_right {
+    right: -5rem;
+  }
 }
 
 .ready_subtitle {
@@ -537,6 +547,14 @@ body {
   font-weight: 500;
   color: #f1f4ff;
   max-width: 37.5rem;
+}
+
+.ready_title {
+  font-size: 3.75rem;
+  color: #16338b;
+  line-height: 1.2;
+  font-weight: 900;
+  text-align: center;
 }
 
 .prices {
@@ -691,6 +709,10 @@ body {
 }
 .why-like_item:nth-child(even) {
   align-self: end;
+}
+
+.w-full {
+  max-width: 106.25rem;
 }
 
 .additionally {
@@ -988,6 +1010,7 @@ body {
 @media (max-width: 68.75em) {
   .ready_img_right {
     max-width: 25rem;
+    top: -6.25rem;
   }
   .ready_img_left {
     max-width: 15.625rem;
@@ -995,6 +1018,7 @@ body {
   }
   .ready_title {
     text-align: center;
+    font-size: 3.125rem;
   }
   .ready_subtitle {
     text-align: center;
