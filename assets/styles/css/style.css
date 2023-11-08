@@ -158,6 +158,17 @@ body {
   z-index: 0;
   max-width: 59.625rem;
 }
+@media (max-width: 100em) {
+  .header_absolute2 {
+    right: -12.5rem;
+  }
+}
+@media (max-width: 90.625em) {
+  .header_absolute2 {
+    right: -9.375rem;
+    max-width: 50rem;
+  }
+}
 
 .header_content {
   margin-top: 8.125rem;
@@ -191,6 +202,10 @@ body {
   border-radius: 3.125rem;
   text-transform: uppercase;
   font-weight: 700;
+  transition: 0.2s;
+}
+.header_button:hover {
+  border: 5px dashed #16338b;
 }
 
 .flex-col {
@@ -352,6 +367,7 @@ body {
   position: relative;
   z-index: 2;
   background-color: #eceaea;
+  overflow: hidden;
 }
 .idea.border {
   outline: 5px dashed #b7b7b7;
@@ -522,6 +538,7 @@ body {
   padding-top: 6.25rem;
   padding-bottom: 9.375rem;
   min-height: 60vh;
+  overflow: hidden;
 }
 
 .ready_img_left {
@@ -983,6 +1000,10 @@ body {
   background-color: #fdf7f1;
   margin-top: 3.125rem;
   color: #16338b;
+  transition: 0.2s;
+}
+.submit-button:hover {
+  border: 5px dashed #16338b;
 }
 .submit-button:disabled {
   color: #bcbbbb;
@@ -997,6 +1018,48 @@ body {
   line-height: 1.2;
   margin-top: 5rem;
   text-align: center;
+}
+
+.contacts {
+  max-width: 40.625rem;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  -moz-column-gap: 6.25rem;
+  column-gap: 6.25rem;
+  row-gap: 2.1875rem;
+}
+@media (max-width: 43.75em) {
+  .contacts {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contacts_col {
+  display: flex;
+  flex-direction: column;
+  gap: 2.1875rem;
+}
+
+.contact_card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.25rem;
+}
+
+.contact_img {
+  max-width: 3.75rem;
+  width: 100%;
+}
+
+.contact_text {
+  font-size: 1.25rem;
+  color: #16338b;
+  text-decoration: underline;
+  line-height: 1.2;
 }
 
 @media (min-width: 84.375em) {
@@ -1307,6 +1370,7 @@ body {
   .ready {
     padding-top: 31.25rem;
     padding-bottom: 12.5rem;
+    overflow: visible;
   }
   .additionallt_vetka {
     top: 17.5rem;

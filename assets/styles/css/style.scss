@@ -73,6 +73,14 @@ body {
   right: rem(-300);
   z-index: 0;
   max-width: rem(954);
+
+  @media (max-width: em(1600)) {
+    right: rem(-200);
+  }
+  @media (max-width: em(1450)) {
+    right: rem(-150);
+    max-width: rem(800);
+  }
 }
 .header_content {
   margin-top: rem(130);
@@ -103,6 +111,11 @@ body {
   border-radius: rem(50);
   text-transform: uppercase;
   font-weight: 700;
+  transition: 0.2s;
+
+  &:hover {
+    border: 5px dashed #16338b;
+  }
 }
 
 // Second block
@@ -261,6 +274,7 @@ body {
   position: relative;
   z-index: 2;
   background-color: #eceaea;
+  overflow: hidden;
 
   &.border {
     outline: 5px dashed #b7b7b7;
@@ -434,6 +448,7 @@ body {
   padding-top: rem(100);
   padding-bottom: rem(150);
   min-height: 60vh;
+  overflow: hidden;
 }
 .ready_img_left {
   position: absolute;
@@ -886,6 +901,11 @@ body {
   background-color: #fdf7f1;
   margin-top: rem(50);
   color: #16338b;
+  transition: 0.2s;
+
+  &:hover {
+    border: 5px dashed #16338b;
+  }
 
   &:disabled {
     color: #bcbbbb;
@@ -901,6 +921,45 @@ body {
   margin-top: rem(80);
   text-align: center;
 }
+.contacts {
+  max-width: rem(650);
+  margin: 0 auto;
+  margin-top: rem(40);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  -moz-column-gap: rem(100);
+  column-gap: rem(100);
+  row-gap: rem(35);
+
+  @media (max-width: $max-700) {
+    grid-template-columns: 1fr;
+  }
+}
+.contacts_col {
+  display: flex;
+  flex-direction: column;
+  gap: rem(35);
+}
+.contact_card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: rem(20);
+}
+.contact_img {
+  max-width: rem(60);
+  width: 100%;
+}
+.contact_text {
+  font-size: rem(20);
+  color: #16338b;
+  text-decoration: underline;
+  line-height: 1.2;
+}
+
+// Media
+
 @media (min-width: $max-1350) {
   .second_block-bg {
     height: rem(1500);
@@ -1227,6 +1286,7 @@ body {
   .ready {
     padding-top: rem(500);
     padding-bottom: rem(200);
+    overflow: visible;
   }
   .additionallt_vetka {
     top: rem(280);
