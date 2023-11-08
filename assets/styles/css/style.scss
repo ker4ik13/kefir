@@ -141,7 +141,8 @@ body {
   z-index: 3;
   background-image: url("../../img/card-bg-777.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  min-height: rem(490);
 
   &.first {
     align-self: center;
@@ -489,7 +490,7 @@ body {
   width: 100%;
   height: 100%;
   margin-top: rem(-100);
-  min-height: rem(900);
+  min-height: rem(1800);
 }
 .prices_red_flag {
   position: absolute;
@@ -531,6 +532,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: rem(100);
 }
 .prices_card {
   display: flex;
@@ -927,6 +929,9 @@ body {
   .add_title {
     max-width: rem(700);
   }
+  .third_block {
+    padding-top: rem(700);
+  }
 }
 @media (max-width: $max-1100) {
   .ready_img_right {
@@ -945,6 +950,12 @@ body {
     text-align: center;
     margin-top: rem(50);
     width: 100%;
+  }
+  .third-img1 {
+    top: rem(400);
+  }
+  .third-img2 {
+    top: rem(400);
   }
 }
 @media (max-width: $max-1000) {
@@ -978,17 +989,16 @@ body {
       position: static;
       transform: translate(0, 0) rotate(0);
     }
-    height: auto;
   }
   .flex-col {
     flex-direction: column;
     gap: rem(30);
   }
   .second_block-bg {
-    height: rem(2000);
+    height: rem(2200);
   }
   .prices .container {
-    top: rem(100);
+    top: rem(150);
   }
   .prices .row.end {
     justify-content: center;
@@ -1000,13 +1010,13 @@ body {
     justify-content: center;
   }
   .third_block {
-    padding-top: rem(1700);
+    padding-top: rem(800);
   }
   .third-img1 {
-    top: rem(1200);
+    top: rem(300);
   }
   .third-img2 {
-    top: rem(1200);
+    top: rem(300);
   }
   .idea_first_img {
     max-width: rem(850);
@@ -1093,7 +1103,7 @@ body {
     gap: rem(30);
   }
   .prices-bg {
-    height: rem(1300);
+    height: rem(2100);
   }
   .add_item_img {
     max-width: rem(150);
@@ -1152,6 +1162,13 @@ body {
     top: rem(250);
   }
 }
+
+@media (max-width: $max-768) {
+  .prices-bg {
+    height: rem(1600);
+    min-height: auto;
+  }
+}
 @media (max-width: $max-700) {
   .konfeti {
     display: none;
@@ -1187,18 +1204,22 @@ body {
   }
   .second-card {
     max-width: 22.625rem;
+    height: rem(490);
+  }
+  .second_block-bg {
+    height: rem(1800);
   }
   .third-img2 {
     max-width: rem(400);
     right: rem(-100);
-    top: rem(1150);
+    top: rem(200);
   }
   .third-img1 {
     max-width: rem(300);
     left: rem(-100);
   }
   .third_block {
-    padding-top: rem(1600);
+    padding-top: rem(700);
   }
   .third_block_title {
     font-size: rem(32);
@@ -1215,6 +1236,13 @@ body {
   }
   .additionally-content {
     padding-top: rem(600);
+  }
+  .additionally-bg {
+    min-height: rem(2400);
+    margin-top: rem(-200);
+  }
+  .process {
+    margin-top: rem(-400);
   }
 
   .ready_img_left {
@@ -1261,8 +1289,26 @@ body {
   }
   .input {
     max-width: rem(400);
-    padding: rem(10) rem(30);
+    padding: rem(20) rem(30);
     font-size: rem(18);
+
+    &.mini {
+      &::-webkit-input-placeholder {
+        font-size: rem(18);
+      }
+      &::-moz-placeholder {
+        font-size: rem(18);
+      }
+      &:-ms-input-placeholder {
+        font-size: rem(18);
+      }
+      &::-ms-input-placeholder {
+        font-size: rem(18);
+      }
+      &::placeholder {
+        font-size: rem(18);
+      }
+    }
   }
   .submit-button {
     font-size: rem(20);
@@ -1305,6 +1351,11 @@ body {
   }
   .santa2 {
     left: rem(-100);
+  }
+  .second-card {
+    max-width: rem(330);
+    height: rem(460);
+    min-height: auto;
   }
 }
 @media (max-width: $max-400) {
