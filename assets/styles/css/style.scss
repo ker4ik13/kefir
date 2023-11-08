@@ -946,6 +946,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: rem(20);
+  flex-wrap: nowrap;
 }
 .contact_img {
   max-width: rem(60);
@@ -956,6 +957,7 @@ body {
   color: #16338b;
   text-decoration: underline;
   line-height: 1.2;
+  white-space: nowrap;
 }
 
 // Media
